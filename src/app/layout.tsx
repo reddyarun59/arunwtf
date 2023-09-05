@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="">
-      <body className="flex flex-col w-full h-screen bg-white dark:bg-zinc-900 text-gray-900 dark:text-gray-100 antialiased">
+      <body className="flex flex-col w-full h-screen bg-white dark:bg-zinc-900 text-gray-900 dark:text-gray-100 antialiased max-w-4xl mx-auto">
         <Nav />
         <Root>{children}</Root>
       </body>

@@ -33,16 +33,15 @@ const Nav: FC = () => {
   const [hoveredPath, setHoveredPath] = useState(pathname);
 
   return (
-    <div className="flex justify-center sticky top-4 z-[100]">
+    <div className="flex justify-center sticky top-8 z-[100] mb-4 md:mb-10">
       <div className="border border-stone-800/90 p-[0.4rem] rounded-full mb-12 bg-stone-900/80 backdrop-blur-md w-72">
         <nav className="flex gap-2 relative justify-center z-[100]  rounded-lg ">
           {navItems.map((item, index) => {
             const isActive = item.path === pathname;
-
             return (
               <Link
                 key={item.path}
-                className={`px-4 py-2 rounded-full text-xs lg:text-sm relative no-underline duration-300 ease-in text-zinc-100 hover:text-zinc-400`}
+                className={`px-4 py-1.5 rounded-full text-xs lg:text-sm relative no-underline duration-300 ease-in text-zinc-100 hover:text-zinc-400`}
                 data-active={isActive}
                 href={item.path}
                 onMouseOver={() => setHoveredPath(item.path)}
