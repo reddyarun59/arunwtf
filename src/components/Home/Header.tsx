@@ -6,7 +6,8 @@ const Header: FC = () => {
     <div className="flex flex-row md:flex-col">
       <div className="flex flex-col">
         <h1 className="font-bold text-3xl md:text-4xl tracking-tight mb-5">
-          Hey, I&apos;m Arun 👋
+          Hey, I&apos;m Arun{" "}
+          <span className="animate-wave inline-block">👋</span>
         </h1>
         <div className="text-zinc-500 dark:text-zinc-400 text-sm md:text-base">
           <p className="mb-2">
