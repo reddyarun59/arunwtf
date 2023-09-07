@@ -7,3 +7,9 @@ export const Root: FC<{ children: ReactNode }> = ({ children }) => (
 export const Layout: FC<{ children: ReactNode }> = ({ children }) => {
   return <div className="">{children}</div>;
 };
+
+export const BlogLayout: FC<{ children: ReactNode }> = ({ children }) => (
+  <div className="">
+    <div className="">{children}</div>
+  </div>
+);
