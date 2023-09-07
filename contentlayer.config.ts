@@ -39,6 +39,7 @@ export default makeSource({
             rehypeSlug,
             rehypeCodeTitles,
             rehypePrism,
+            // @ts-ignore
             rehypePresetMinify,
             [rehypeAutolinkHeadings, { properties: { className: ['anchor'] } }],
         ]
