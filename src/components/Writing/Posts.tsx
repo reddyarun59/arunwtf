@@ -9,8 +9,17 @@ const sortedPosts = allPosts.sort((a, b) =>
 
 const Post: FC<Post> = (props) => (
   <Link className="" href={props.slug}>
-    <h2>{props.title}</h2>
-    <p>{format(new Date(props.published), "dd/MM")}</p>
+    <div className="flex justify-between">
+      <div className="hover:opacity-80">
+        <h2 className="text-xl md:text-2xl font-semibold mb-2">
+          {props.title}
+        </h2>
+        <p className="text-sm md:text-base">{props.description}</p>
+      </div>
+      <p className="pl-4 text-zinc-400 text-sm md:text-base">
+        {format(new Date(props.published), "dd/MM")}
+      </p>
+    </div>
   </Link>
 );
 
