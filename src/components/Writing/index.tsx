@@ -10,9 +10,8 @@ const Writing: FC = () => {
           Blogs
         </h1>
         <p className="text-zinc-500 dark:text-zinc-400 text-sm md:text-base">
-          Exploring the intersections of life and technology through words,
-          Crafting the narrative of my journey while navigating the ever-evolving
-          world of tech.
+          Crafting the narrative of my journey while navigating the
+          ever-evolving world of tech.
         </p>
       </div>
       <div>
